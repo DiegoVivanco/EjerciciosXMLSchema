@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.edreams.es/reservas" 
+		xmlns="http://www.edreams.es/reservas"
+		xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		elementFormDefault="unqualified">	
+
+	<!-- Colección de tipos incluidos  -->
+
+	<xs:complexType name="tipoViajeros">
+		
+		<xs:sequence>
+			<xs:element name="adultos" type="viajerosAdultos"></xs:element>
+			<xs:element maxOccurs="1" minOccurs="0" name="niños"
+				type="viajerosMenores">
+			</xs:element>
+			<xs:element maxOccurs="1" minOccurs="0" name="bebes"
+				type="viajerosMenores">
+			</xs:element>
+		</xs:sequence>
+		
+  	</xs:complexType>
+		
+	<!-- definición de tipos simples -->
+
+	<xs:simpleType name="viajerosAdultos">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1"></xs:minInclusive>
+			<xs:maxInclusive value="9"></xs:maxInclusive>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="viajerosMenores">
+		<xs:restriction base="xs:integer">
+			<xs:pattern value="[0-9]"></xs:pattern>
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>

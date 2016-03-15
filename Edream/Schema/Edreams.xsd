@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.edreams.es/reservas"
+		xmlns:aena="http://www.iata.com/wac"
+		xmlns:ed="http://www.edreams.es/reservas"
+		xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		elementFormDefault="unqualified">	
+	
+	<xs:import namespace="http://www.iata.com/wac" schemaLocation="WAC.xsd"></xs:import>
+	<xs:include schemaLocation="EdreamsInclude.xsd"></xs:include>
+		
+	<xs:element name="vuelosEdreams"> <!-- Elemento Global del XmlSchema -->
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs = "unbounded" name="vuelo" type="billete"/>
+    		</xs:sequence>
+   		</xs:complexType>
+  	</xs:element>
+  	
+  	<!-- definición de tipos complejos -->
+
+	<xs:complexType name="billete">
+		
+		<xs:sequence>
+			<xs:element name="trayecto" type="tipoTrayecto"></xs:element>
+			<!-- elementos locales -->
+			<xs:element name="fecha" type="tipoFecha"></xs:element>
+			<xs:element name="viajeros" type="tipoViajeros"></xs:element>
+		</xs:sequence>
+	
+	</xs:complexType>
+	
+	<xs:complexType name="tipoTrayecto">
+		
+		<xs:sequence>
+			<xs:element name="origen" type="xs:string"></xs:element>
+			<xs:element name="destino" type="xs:string"></xs:element>
+		</xs:sequence>
+		
+	</xs:complexType>
+
+	<xs:complexType name="tipoFecha">
+		
+		<xs:sequence>
+			<xs:element name="salida" type="xs:date"></xs:element>
+			<xs:element minOccurs="0" name="regreso" type="xs:date"></xs:element>
+		</xs:sequence>
+		
+	</xs:complexType>
+
+</xs:schema>

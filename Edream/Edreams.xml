@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ed:vuelosEdreams xmlns:ed="http://www.edreams.es/reservas" 
+				  xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+				  xs:schemaLocation= "http://www.edreams.es/reservas ./Schema/Edreams.xsd">
+	<vuelo>
+		<trayecto>
+			<origen>PalmaDeMallorca</origen>
+			<destino>Barcelona</destino>
+		</trayecto>
+		<fecha>
+			<salida>2005-10-26</salida>
+			<regreso>2005-10-26</regreso>
+		</fecha>
+		<viajeros>
+			<adultos>1</adultos>
+			<niños>0</niños>
+			<bebes>0</bebes>
+		</viajeros>
+	</vuelo>
+</ed:vuelosEdreams>
