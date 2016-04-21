@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+		targetNamespace="http://www.example.org/estacion" 
+		xmlns:tns="http://www.example.org/estacion" 
+		elementFormDefault="unqualified">
+		
+
+    <element name="estacion" type="tns:Estacion"></element>
+    
+    <complexType name="Estacion">
+    	<sequence>
+    		<element name="id" type="tns:idtype"></element>
+    		<element name="direccion" type="tns:direcciontype"></element>
+    		<element name="numeroAnclajes" type="tns:numeroAnclajestype"></element>
+    		<element name="anclajes" type="tns:anclajestype"></element>
+    	</sequence>
+    </complexType>
+
+
+	<complexType name="anclajestype">
+		<sequence>
+			<element name="bicicleta" type="tns:bicicletatype" minOccurs="1" maxOccurs="unbounded"></element>
+		</sequence>
+	</complexType>
+    
+ 	<simpleType name="idtype">
+		  <restriction base="string">
+		    <pattern value="[0-9]{1,15}"/>
+		  </restriction>
+	</simpleType>
+	
+	<simpleType name="direcciontype">
+		<restriction base="int"></restriction>
+	</simpleType>
+	
+	<simpleType name="numeroAnclajestype">
+		<restriction base="int"></restriction>
+	</simpleType>
+	
+	<simpleType name="bicicletatype">
+		<restriction base="string"></restriction>
+	</simpleType>
+
+
+</schema>

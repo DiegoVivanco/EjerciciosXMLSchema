@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:NewElement xmlns:tns="http://www.example.org/autentia-schema" 
+				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+				xsi:schemaLocation="http://www.example.org/autentia-schema autentia-schema.xsd ">
+  <tns:Nombre>tns:Nombre</tns:Nombre>
+  <tns:NewElement>tns:NewElement</tns:NewElement>
+</tns:NewElement>

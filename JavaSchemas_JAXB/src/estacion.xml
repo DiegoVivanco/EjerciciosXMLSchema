@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:estacion xmlns:tns="http://www.example.org/estacion" 
+			  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+			  xsi:schemaLocation="http://www.example.org/estacion estacion.xsd ">
+		  <id>123344</id>
+		  <direccion>03</direccion>
+		  <numeroAnclajes>5</numeroAnclajes>
+		  <anclajes>
+			    <bicicleta>2hdfhdghd</bicicleta>
+			    <bicicleta>null</bicicleta>
+			    <bicicleta>2fhdhdfhdfh</bicicleta>
+			    <bicicleta>null</bicicleta>
+		  </anclajes>
+</tns:estacion>
