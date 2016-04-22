@@ -24,7 +24,7 @@ En este repositorio encontrarás código XML donde pongo en práctica todos los 
 
 **¿Para qué sirve XML?**
 
- - Representar información estructurada en la web (todos documentos), de
+ - Representar información estructurada, de
    modo que esta información pueda ser almacenada, transmitida,
    procesada, visualizada e impresa, por muy diversos tipos de
    aplicaciones y dispositivos.
