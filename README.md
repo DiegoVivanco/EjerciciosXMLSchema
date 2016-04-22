@@ -19,9 +19,8 @@ En este repositorio encontrarás código XML donde pongo en práctica todos los 
  - Es un estándar internacionalmente conocido
 
  - No pertenece a ninguna compañía
-
- - Permite una utilización efectiva en Internet para sus diferentes
-   terminales.
+ 
+ - Se diseñó para el intercambio de información entre sistemas
 
 **¿Para qué sirve XML?**
 
